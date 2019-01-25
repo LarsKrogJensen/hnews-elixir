@@ -24,6 +24,7 @@ defmodule Hnews.MixProject do
     [
       {:jason, "~> 1.1"},
       {:httpoison, "~> 1.5.0"},
+       {:nebulex, "~> 1.0"},
       {:remix, "~> 0.0.2", only: :dev}
     ]
   end

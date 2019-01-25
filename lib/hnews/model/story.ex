@@ -1,7 +1,8 @@
 defmodule HackerNewsApi.Model.Story do
-  defstruct by: "", descendants: 0, kids: [], score: 0, time: 0, title: "", type: "story", url: ""
+  defstruct id: "", by: "", descendants: 0, kids: [], score: 0, time: 0, title: "", type: "story", url: ""
 
   @type t :: %__MODULE__{
+          id: integer(),
           by: String.t(),
           descendants: integer(),
           kids: list(integer()),
