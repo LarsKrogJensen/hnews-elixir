@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="shards" type="mix">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/shards/src" />
+    </SOURCES>
+  </library>
+</component>
