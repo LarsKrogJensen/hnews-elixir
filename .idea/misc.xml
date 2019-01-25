@@ -4,5 +4,7 @@
     <option name="sourceMapEmbedSources" />
     <option name="sourceMapPrefix" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" project-jdk-name="Elixir 1.7.2" project-jdk-type="Elixir SDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
 </project>
