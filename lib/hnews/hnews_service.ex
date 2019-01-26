@@ -23,6 +23,7 @@ defmodule HackerNewsService do
     end
   end
 
+  @spec store({:error, any()} | {:ok, %Story{}}, integer()) :: {:error, any()} | {:ok, %Story{}}
   defp store(result, id) do
     case result do
       {:ok, val} -> HackerNewsCache.set(id, val)

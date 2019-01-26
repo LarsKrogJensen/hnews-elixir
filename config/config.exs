@@ -7,8 +7,20 @@ use Mix.Config
 # file won't be loaded nor affect the parent project. For this reason,
 # if you want to provide default values for your application for
 # 3rd-party users, it should be done in your "mix.exs" file.
-config :hnews, HackerNewsCache,
-  gc_interval: 86_400 # 24 hrs
+config :hnews, HackerNewsCache, levels: [HackerNewsCache.Local, HackerNewsCache.Redis]
+
+config :hnews, HackerNewsCache.Local,
+  # 24 hrs
+  gc_interval: 86_400
+
+config :hnews, HackerNewsCache.Redis,
+  pools: [
+    primary: [
+      host: "192.168.1.36",
+      port: 6379,
+      pool_size: 10
+    ]
+  ]
 
 # You can configure your application as:
 #
